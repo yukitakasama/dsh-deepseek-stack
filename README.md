@@ -11,6 +11,10 @@ The plugin mounts the bundled `skills/` directory with
 `<name>/SKILL.md` bundle, shows its frontmatter description in the session
 skill catalog, and loads the full instructions on demand.
 
+The package includes the standard `dsh.bundle.patch` declaration and a
+package-owned `cordis.patch.yml`, so it can be placed directly in a profile's
+`dsh.profile.bundles` list.
+
 The upstream skill text is shipped as-is in this public plugin. Personal
 policy adaptations belong in a separate downstream pack overlay and are not
 part of this repository.

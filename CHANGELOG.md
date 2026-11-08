@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.1
+
+- Added the standard `dsh.bundle.patch` declaration and package patch layer so
+  the plugin is loadable when listed in `dsh.profile.bundles`.
+
 ## 0.1.0
 
 - Added the official DSH adapter for all 29 skills from the pinned

@@ -1,0 +1,5 @@
+# Register the skill provider as a profile bundle. DSH requires every package
+# listed in dsh.profile.bundles to declare this patch layer in package.json.
+- insert:
+    - id: dsh-deepseek-stack
+      name: dsh-deepseek-stack
