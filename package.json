@@ -1,0 +1,32 @@
+{
+  "name": "dsh-deepseek-stack",
+  "version": "0.1.0",
+  "description": "DeepSeek Harness plugin that exposes the upstream deepseek-stack skills through the official DSH skill registry.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "types": "./lib/index.d.ts",
+      "default": "./lib/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "skills",
+    "LICENSE",
+    "NOTICE",
+    "README.md",
+    "UPSTREAM.md"
+  ],
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/check.mjs"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": ">=4.1.0 <5.0.0",
+    "@deepseek-ai/dsh-skill": ">=0.2.2-rc.1 <0.3.0-0",
+    "@deepseek-ai/dsh-skill-filesystem": ">=0.2.2-rc.1 <0.3.0-0"
+  },
+  "license": "MIT"
+}
